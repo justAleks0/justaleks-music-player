@@ -32,3 +32,24 @@ h1 {
 audio {
   width: 100%;
 }
+#cover {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+#title {
+  margin: 0.5rem 0 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#artist,
+#album {
+  margin: 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
