@@ -4,10 +4,15 @@
   <meta charset="UTF-8">
   <title>justAleks Music Player</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/jsmediatags/dist/jsmediatags.min.js"></script>
 </head>
 <body>
   <h1>justAleks Music Player</h1>
   <div id="player">
+    <img id="cover" src="" alt="Album cover" style="max-width: 100%; border-radius: 8px; display: none;">
+    <h2 id="title"></h2>
+    <p id="artist"></p>
+    <p id="album"></p>
     <select id="trackList">
       <option value="" disabled selected>Select a track...</option>
     </select>
