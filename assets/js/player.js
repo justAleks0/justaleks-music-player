@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (file.name.toLowerCase().endsWith('.mp3')) {
           const option = document.createElement('option');
           // Set value to the raw file URL
-          option.value = 'https://raw.githubusercontent.com/justAleks0/justaleks-music-player/main/music/' + encodeURIComponent(file.name);
           // Display the name without extension and replace underscores with spaces
-          option.textContent = file.name.replace(/\.mp3$/i, '').replace(/_/g, ' ');
+                     option.value = 'music/' + encodeURIComponent(file.name);
+ option.textContent = file.name.replace(/\.mp3$/i, '').replace(/_/g, ' ');
           trackList.appendChild(option);
         }
       });
