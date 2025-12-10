@@ -3,9 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>justAleks Music Player</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <h1>justAleks Music Player</h1>
-  <p>Work in progress...</p>
+  <div id="player">
+    <select id="trackList">
+      <option value="" disabled selected>Select a track...</option>
+    </select>
+    <audio id="audioPlayer" controls>
+      <source id="audioSource" src="" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <script src="assets/js/player.js"></script>
 </body>
 </html>
